@@ -109,7 +109,7 @@
                     </li>
 
                     <li class="nav-item ms-3">
-                        <a class="nav-link custom-btn custom-border-btn btn" href="ventanaRegistrarse">Registrarse</a>
+                        <a class="nav-link custom-btn custom-border-btn btn" id="ventanaRegistrarse">Registrarse</a>
                     </li>
                 </ul>
             </div>
@@ -126,6 +126,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="images/Logo-PlayTimePets.jpg" alt="LOGO">
                         <h5 class="modal-title">Iniciar Sesion</h5>
                         
                     </div>
@@ -148,7 +149,58 @@
         </div>
     </div>
     <!-- FIN MODAL DE INICIO -->
+
     <!-- INICIO MODAL DE REGISTRARSE -->
+    <div class="container">
+        <div class="modal fade" href="ventanaRegistrarse">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="images/Logo-PlayTimePets.jpg" alt="LOGO">
+                        <h5 class="modal-title">Iniciar Sesion</h5>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate="">
+                            <div class="col-md-6">
+                                <label for="txtNombres" class="form-label">Nombres</label>
+                                <input type="text" class="form-control" id="txtNombres" required="">
+                                <div class="invalid-feedback">¡Este campo es requerido!</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="txtApellidos" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="txtApellidos" required="">
+                                <div class="valid-feedback">¡Este campo es requerido!</div>
+                            </div>
+                            <div class="col-md-8">
+                                <label for="txtCorreo" class="form-label">Correo electrónico</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="txtCorreo" aria-describedby="inputGroupPrepend" required="">
+                                    <div class="invalid-feedback">Por favor ingrese un correo electrónico</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="txtCelular" class="form-label">Celular</label>
+                                <input type="text" class="form-control" id="txtCelular" required="">
+                                <div class="invalid-feedback">Ingrese un número de celular</div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Registrarse</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- FIN MODAL DE REGISTRARSE -->
 
     <!--INICIO SECCIÓN CARRUSEL -->
