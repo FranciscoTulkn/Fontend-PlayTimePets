@@ -17,6 +17,7 @@
 
     <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
     
+    <link rel="stylesheet" href="css/modalFormularioIniciarSesion.css">
 </head>
 
 <body id="section_1">
@@ -105,11 +106,95 @@
                     </li>
 
                     <li class="nav-item ms-3">
-                        <a class="nav-link custom-btn custom-border-btn btn"  data-toggle="modal" id="ventanaIngresar">Ingresar</a>
+
+                        <div class="container">
+
+                            <a class="nav-link custom-btn custom-border-btn btn"  data-bs-toggle="modal" href="#ventanaIngresar">Ingresar</a>
+                            
+<!------------------------INICIO FORMULARIO INICIAR SESION - MUDULO ------------------------>
+                            <div class="modal fade" id="ventanaIngresar">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header mx-auto">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <img src="images/Logo-PlayTimePets.jpg" class="img-thumbnail rounded logoModal" alt="LOGO">
+                                            <h5 class="modal-title tituloModal">Iniciar Sesion</h5>
+                                        </div>
+                                        <div class="modal-body cuerpoModal">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" id="floatingInput" placeholder="Correo electrónico">
+                                                <label for="floatingInput">Correo electrónico</label>
+                                            </div>
+                                            <div class="form-floating">
+                                                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                                                <label for="floatingPassword">Contraseña</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-primary">Iniciar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FIN FORMULARIO INICIAR SESION - MUDULO-->
+                        </div>
                     </li>
 
                     <li class="nav-item ms-3">
-                        <a class="nav-link custom-btn custom-border-btn btn" id="ventanaRegistrarse">Registrarse</a>
+                        <div class="container">
+
+                            <a class="nav-link custom-btn custom-border-btn btn" href="#ventanaRegistrarse" data-bs-toggle="modal">Registrarse</a>
+
+                            <!--INICIO FORMULARIO INICIAR REGISTRARSE - MUDULO-->
+                                <div class="modal fade" id="ventanaRegistrarse">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <img src="images/Logo-PlayTimePets.jpg" class="logoModal" alt="LOGO">
+                                                <h5 class="modal-title">Regristrarse</h5>
+                                                
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="row g-3 needs-validation" novalidate="">
+                                                    <div class="col-md-6">
+                                                        <label for="txtNombres" class="form-label">Nombres</label>
+                                                        <input type="text" class="form-control" id="txtNombres" required="">
+                                                        <div class="invalid-feedback">¡Este campo es requerido!</div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txtApellidos" class="form-label">Apellidos</label>
+                                                        <input type="text" class="form-control" id="txtApellidos" required="">
+                                                        <div class="valid-feedback">¡Este campo es requerido!</div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <label for="txtCorreo" class="form-label">Correo electrónico</label>
+                                                        <div class="input-group has-validation">
+                                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                            <input type="text" class="form-control" id="txtCorreo" aria-describedby="inputGroupPrepend" required="">
+                                                            <div class="invalid-feedback">Por favor ingrese un correo electrónico</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="txtCelular" class="form-label">Celular</label>
+                                                        <input type="text" class="form-control" id="txtCelular" required="">
+                                                        <div class="invalid-feedback">Ingrese un número de celular</div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                    </div>
+                                                </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                <br>
+                                                <button class="btn btn-primary" type="submit">Registrarse</button>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!--FIN FORMULARIO REGISTRARSE - MUDULO-->
                     </li>
                 </ul>
             </div>
@@ -120,86 +205,11 @@
 
     <!-- INICIO MODAL DE INICIO -->
     <!-- Modal centrado verticalmente -->
-    <div class="container">
-        <div class="modal fade" href="ventanaIngresar">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <img src="images/Logo-PlayTimePets.jpg" alt="LOGO">
-                        <h5 class="modal-title">Iniciar Sesion</h5>
-                        
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Correo electrónico</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
-                            <label for="floatingPassword">Contraseña</label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Iniciar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- FIN MODAL DE INICIO -->
 
     <!-- INICIO MODAL DE REGISTRARSE -->
-    <div class="container">
-        <div class="modal fade" href="ventanaRegistrarse">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <img src="images/Logo-PlayTimePets.jpg" alt="LOGO">
-                        <h5 class="modal-title">Iniciar Sesion</h5>
-                        
-                    </div>
-                    <div class="modal-body">
-                        <form class="row g-3 needs-validation" novalidate="">
-                            <div class="col-md-6">
-                                <label for="txtNombres" class="form-label">Nombres</label>
-                                <input type="text" class="form-control" id="txtNombres" required="">
-                                <div class="invalid-feedback">¡Este campo es requerido!</div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="txtApellidos" class="form-label">Apellidos</label>
-                                <input type="text" class="form-control" id="txtApellidos" required="">
-                                <div class="valid-feedback">¡Este campo es requerido!</div>
-                            </div>
-                            <div class="col-md-8">
-                                <label for="txtCorreo" class="form-label">Correo electrónico</label>
-                                <div class="input-group has-validation">
-                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                    <input type="text" class="form-control" id="txtCorreo" aria-describedby="inputGroupPrepend" required="">
-                                    <div class="invalid-feedback">Por favor ingrese un correo electrónico</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="txtCelular" class="form-label">Celular</label>
-                                <input type="text" class="form-control" id="txtCelular" required="">
-                                <div class="invalid-feedback">Ingrese un número de celular</div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Registrarse</button>
-                            </div>
-                        </form>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Iniciar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     
     <!-- FIN MODAL DE REGISTRARSE -->
 
@@ -344,10 +354,20 @@
                             <p class="mb-0">En nuestra veterinaría encontrarás productos desde la gama económica a la súper premium. Todo un universo de soluciones para tu mascota.</p>
                         </div>
 
-                        <div class="row">
-                            <div class="col-lg-6 col-12">
+                        <div class="row mb-3">
+                            <div class="col-lg-6 cols-md-5 col-12">
                                 <div class="custom-text-box mb-lg-0">
                                     <h5 class="mb-3">Misión</h5>
+
+                                    <p>Ser la clínica veterinaria referente entregando servicios inclusivos donde nuestras mascotas encuentren todo lo necesario para su salud y desarrollo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 cols-md-5 col-12">
+                                <div class="custom-text-box mb-lg-0">
+                                    <h5 class="mb-3">Visión</h5>
 
                                     <p>Ser la clínica veterinaria número 1 en colombia, creando servicios inclusivos donde cualquier amante a los animales escuentre apoyo en todo aspecto de la vida de su mascota.</p>
                                 </div>
