@@ -1,3 +1,7 @@
+.modal-backdrop{
+    z-index: 5;
+}
+
 .modal-content{
     background-color: #3b4652;
     opacity: .85;
