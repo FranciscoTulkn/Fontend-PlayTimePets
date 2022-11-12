@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/FormularioAdministradorCRUD.css">
+
+<!-- FONTAWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Secsión Administrador - PlayTime Pets</title>
+</head>
+
+<body>
+	<div class="container-xl">
+		<div class="table-responsive">
+			<div class="table-wrapper">
+				<div class="table-title">
+					<div class="row">
+						<div class="col-sm-6">
+							<img src="images/Logo-PlayTimePets.jpg" class="img-fluid" alt="LOGO">
+							<h2>PlayTime <b>Pets</b></h2>
+						</div>
+						<div class="col-sm-6">
+							<img src="" alt="">
+							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+									class="material-icons">&#xE147;</i> <span>Agregar Usuario</span></a>
+							<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
+									class="material-icons">&#xE15C;</i> <span>Borrar Usuario</span></a>
+						</div>
+					</div>
+				</div>
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="selectAll">
+									<label for="selectAll"></label>
+								</span>
+							</th>
+							<th>Nombre</th>
+							<th>Correo</th>
+							<th>Dirección</th>
+							<th>Celular</th>
+							<th>Rol</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox1" name="options[]" value="1">
+									<label for="checkbox1"></label>
+								</span>
+							</td>
+							<td>Mónica Martínez</td>
+							<td>monicu81@gmail.com</td>
+							<td>Calle 185 #24-11</td>
+							<td>(+57) 3195695709</td>
+							<td>Administrador</td>
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+										data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+										class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox1" name="options[]" value="1">
+									<label for="checkbox1"></label>
+								</span>
+							</td>
+							<td>Thomas Alvarez</td>
+							<td>thomasalvares@gmail.com</td>
+							<td>Calle 170 #19-11</td>
+							<td>(+57) 3275552222</td>
+							<td>Usuario</td>
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+										data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+										class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox2" name="options[]" value="1">
+									<label for="checkbox2"></label>
+								</span>
+							</td>
+							<td>Dario Rodríguez</td>
+							<td>darior18@gmail.com</td>
+							<td>Diagonal 165 #8a-22</td>
+							<td>(+57) 3135555735</td>
+							<td>Usuario</td>
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+										data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+										class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox3" name="options[]" value="1">
+									<label for="checkbox3"></label>
+								</span>
+							</td>
+							<td>Maria Becerra</td>
+							<td>mbecerra@hotmail.com</td>
+							<td>Calle 70 #4-16</td>
+							<td>(+57) 3215559931</td>
+							<td>Usuario</td>
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+										data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+										class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+
+				</table>
+				<div class="clearfix">
+					<div class="hint-text">Mostrando <b>1</b> de <b>3</b> páginas</div>
+					<ul class="pagination">
+						<li class="page-item disabled "><a href="#">Anterior</a></li>
+						<li class="page-item active"><a href="#" class="page-link">1</a></li>
+						<li class="page-item"><a href="#" class="page-link">2</a></li>
+						<li class="page-item "><a href="#" class="page-link">3</a></li>
+						<li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- INICIO MODAL PARA AGREGAR USUARIO -->
+	<div id="addEmployeeModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						<h4 class="modal-title">Agregar Usuario</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Nombres</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Correo</label>
+							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Dirección</label>
+							<textarea class="form-control" required></textarea>
+						</div>
+						<div class="form-group">
+							<label>Celular</label>
+							<input type="text" class="form-control" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-success" value="Add">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- FIN MODAL AGREGAR USUARIO -->
+	<!-- INICIO MODAL PARA EDITAR USUARIO -->
+	<div id="editEmployeeModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						<h4 class="modal-title">EDITAR USUARIO</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Nombres</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Correo</label>
+							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Dirección</label>
+							<textarea class="form-control" required></textarea>
+						</div>
+						<div class="form-group">
+							<label>Celular</label>
+							<input type="text" class="form-control" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-info" value="Save">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- FIN MODAL PARA EDITAR USUARIO -->
+	<!-- INICIO MODAL PARA BORRAR USUARIO -->
+	<div id="deleteEmployeeModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						<h4 class="modal-title">Delete Employee</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<p>Are you sure you want to delete these Records?</p>
+						<p class="text-warning"><small>This action cannot be undone.</small></p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-danger" value="Delete">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<!--LINKS SCRIPTS JAVASCRIPT -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">   </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
